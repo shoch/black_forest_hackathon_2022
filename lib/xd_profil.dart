@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './xd_home.dart';
+//import './xd_home.dart';
 import 'package:adobe_xd/page_link.dart';
 import './xd_komponente41.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'barcodeScanner.dart';
+
 class XDProfil extends StatelessWidget {
   XDProfil({
-    Key key,
+    Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class XDProfil extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => XDHome(),
+                  pageBuilder: () => BarcodeScanner(),
                 ),
               ],
               child: Stack(

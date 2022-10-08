@@ -71,6 +71,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/
+    - assets/images/ampel_grau.png
+    - assets/images/ampel_gruen.png
+    - assets/images/ampel_rot.png
+    - assets/images/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

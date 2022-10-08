@@ -114,6 +114,12 @@ class BarcodeScannerState extends State<BarcodeScanner> {
       _histamin = histamin;
     });
 
+    //if (_histamin) {
+    //  Navigator.pushReplacementNamed(context, routes.traffic_light_red);
+    //} else {
+    //  Navigator.pushReplacementNamed(context, routes.traffic_light_green);
+    //}
+
     Navigator.of(context).pushReplacement(//new
         new MaterialPageRoute(
             //new
@@ -127,7 +133,10 @@ class BarcodeScannerState extends State<BarcodeScanner> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: const Text('Barcode scan')),
+            backgroundColor: const Color(0xffffffff),
+            appBar: AppBar(
+              title: const Text('Barcode scan'),
+            ),
             body: Builder(builder: (BuildContext context) {
               return Container(
                   alignment: Alignment.center,
@@ -135,11 +144,17 @@ class BarcodeScannerState extends State<BarcodeScanner> {
                       direction: Axis.vertical,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
+                        Image.asset('assets/images/logo.png'),
                         ElevatedButton(
                             onPressed: () => scanBarcodeNormal(),
-                            child: Text('Start barcode scan')),
-                        Text('Scan result : $_scanBarcode\n',
-                            style: TextStyle(fontSize: 20))
+                            child: const Text('PRODUKT SCANNEN',
+                                style: TextStyle(
+                                  fontFamily: 'Segoe UI',
+                                  fontSize: 20,
+                                  color: Color(0xff6200ee),
+                                ))),
+                        //Text('Scan result : $_scanBarcode\n',
+                        //    style: TextStyle(fontSize: 20))
                       ]));
             }),
             drawer: createDrawer(context)));

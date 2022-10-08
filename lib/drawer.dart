@@ -13,6 +13,7 @@ Widget createDrawer(BuildContext context) {
             'Navigation Drawer',
             style: TextStyle(
               fontSize: 20,
+              color: Color(0xff6200ee),
             ),
           ),
         ),

@@ -20,11 +20,26 @@ class ResultState extends State<Result> {
   Widget build(BuildContext context) {
     var barcode = widget.passedBarcode;
     var result_hist = widget.passedResult;
+
+    String imageName = 'assets/images/ampel_gruen.png';
+    if (result_hist) {
+      imageName = 'assets/images/ampel_rot.png';
+    }
+
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: const Text('Result ')),
+            appBar: AppBar(title: const Text('Ergebnis')),
             body: Builder(builder: (BuildContext context) {
-              return Container(child: Text('result $barcode $result_hist '));
+              return Container(
+                  alignment: Alignment.center,
+                  child: Flex(
+                      direction: Axis.vertical,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text('Barcode $barcode and Histamines $result_hist '),
+                        //Image(image: AssetImage(imageName))
+                        Image.asset(imageName)
+                      ]));
             }),
             drawer: createDrawer(context)));
   }
