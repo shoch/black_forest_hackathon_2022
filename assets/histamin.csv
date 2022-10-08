@@ -1,0 +1,833 @@
+1;Eidotter
+1;Eigelb
+1;Wachteleier
+1;Butter: Süßrahmbutter, Süssrahmbutter
+1;Butterkäse
+1;Frischkäse
+1;Geheimratskäse
+1;Gouda Käse, jung
+1;Haltbarmilch, H-Milch, UHT-Milch, Up-Milch
+1;Mascarpone Käse
+1;Milch, pasteurisiert (PAST-Milch)
+1;Molke
+1;Mozzarella Käse
+1;Obers, Sahne (wenn ohne Zusatzstoffe)
+1;Quark
+1;Rahm, süß (wenn ohne Zusatzstoffe)
+1;Ricotta Käse
+1;Rohmilch
+1;Sahne, süß (wenn ohne Zusatzstoffe)
+1;Schafmilch, Schafsmilch
+1;Schlagobers, Schlagsahne (wenn ohne Zusatzstoffe)
+1;Süssrahm, Süßrahm (wenn ohne Zusatzstoffe)
+1;Topfen
+1;UHT-Milch, Up-Milch, H-Milch, Haltbarmilch
+1;Ziegenmilch
+1;Faschiertes (=Hackfleisch), bei Verzehr unmittelbar nach
+1;Hackfleisch, bei Verzehr unmittelbar nach Herstellung
+1;Zunge, Rindszunge, Kalbszunge
+1;Fisch, fangfrisch oder tiefgekühlt
+1;Schmalz: Schweineschmalz
+1;Amarant
+1;Cornflakes (ohne Malz, Folsäure oder andere Zusätze)
+1;Dinkel
+1;Edelkastanien, frisch oder tiefgekühlt
+1;Erdäpfel, frisch geerntet, mit Schale
+1;Erdäpfel, gelagert, geschält
+1;Erdäpfel, gelagert, mit Schale
+1;Esskastanien, frisch oder tiefgekühlt
+1;Hafer
+1;Hanfproteinpulver
+1;Hanfsamen (Cannabis sativa)
+1;Hirse
+1;KAMUT®, Khorasan-Weizen
+1;Kartoffel, frisch geerntet, mit Schale
+1;Kartoffel, gelagert, geschält
+1;Kartoffel, gelagert, mit Schale
+1;Khorasan-Weizen, KAMUT®
+1;Kukuruz, getrocknet: Maisgriess, Maisgrieß, Maismehl,
+1;Kukuruz: Mais aus der Dose, Dosenmais
+1;Kukuruz: Maiskörner, Maiskolben frisch/pasteurisiert
+1;Mais aus der Dose, Dosenmais
+1;Mais, getrocknet: Maisgriess, Maisgrieß, Maismehl,
+1;Mais: Maiskörner, Maiskolben frisch/pasteurisiert
+1;Maltodextrin
+1;Maroni, Marroni, Maronen, frisch oder tiefgekühlt
+1;Perlsago
+1;Quinoa
+1;Reis
+1;Reisnudeln
+1;Reiswaffeln, Reis-Mais-Waffeln
+1;Rice Crispies
+1;Sago
+1;Süsskartoffel, Süßkartoffel
+1;Wildreis
+1;Erdmandel (Cyperus esculentus)
+1;Macadamia-Nuss
+1;Paranuss
+1;Pistazie
+1;Tigernuss (Cyperus esculentus)
+1;Distelöl, Färberdistelöl, Safloröl
+1;Kokosfett, Kokosöl, Kokosnussfett, Kokosnussöl
+1;Kokosöl, Kokosfett
+1;Kürbiskernöl
+1;Margarine (wenn ohne unverträgliche Zusatzstoffe)
+1;Olivenöl
+1;Palmfett, Palmöl
+1;Palmkernöl
+1;Palmöl, Palmfett
+1;Rapsöl
+1;Safloröl, Distelöl, Färberdistelöl
+1;Schwarzkümmelöl (Nigella sativa)
+1;Ackersalat
+1;Artischocke
+1;Blattsalate
+1;Blaukabis, Blaukraut
+1;Bleichsellerie
+1;Blumenkohl
+1;Broccoli, Brokkoli
+1;Chicorée (Cichorium intybus)
+1;Chinakohl
+1;Eisbergsalat
+1;Endiviensalat, Endivie (Cichorium endivia)
+1;Feldsalat
+1;Fenchel
+1;Gurken: Salatgurke
+1;Kappes, Kraut, Weißkohl
+1;Karfiol, Blumenkohl
+1;Karotte
+1;Knollensellerie
+1;Kohlsorten (außer Rosenkohl, Kohlrabi)
+1;Kürbisse, div. Sorten
+1;Möhre, Mohrrübe
+1;Nüsslisalat, Nüssler
+1;Pak Choi
+1;Paprika, Peperoni, milde Sorten
+1;Pastinaken
+1;Peperoni, Paprika, milde Sorten
+1;Radieschen
+1;Randen
+1;Rettich: Bierrettich, mild
+1;Rote Bete, Rote Beete
+1;Rotkohl
+1;Rüebli
+1;Salat: Blattsalate
+1;Sellerie: Knollensellerie
+1;Senfkohl
+1;Spargel
+1;Stangensellerie
+1;Vogerlsalat
+1;Weisskohl, Weisskabis, Weisskraut, Weißkohl, Weißkabis,
+1;Zeller, Knollensellerie
+1;Zichorie: Salatzichorie, Chicorée
+1;Zucchini, Zucchetti
+1;Zwiebel: Weisse Zwiebel, Weiße Zwiebel
+1;Basilikum
+1;Bohnenkraut
+1;Oregano
+1;Petersilie
+1;Pfefferminze
+1;Rosmarin
+1;Salbei
+1;Acerola, Acerolapulver, Acerolakirsche, Azerola, Ahornkirsche, Antillenkirsche, Kirsche der Antillen, Puerto- Rico-Kirsche, Westindische Kirsche, Jamaika-Kirsche,
+1;Apfel
+1;Apfel: Golden Delicious
+1;Aprikose
+1;Blaubeere (Vaccinium myrtillus)
+1;Bocksdorn-Beeren, Goji-Beeren
+1;Brombeeren
+1;Cassis
+1;Cranberry
+1;Datteln, getrocknet
+1;Drachenfrucht, Pitaya, Pitahaya
+1;Goji-Beeren, Bocksdorn-Beeren
+1;Granatapfel (rotes Fleisch ohne Kerne)
+1;Grossfrüchtige Moosbeere, Großfrüchtige Moosbeere
+1;Heidelbeeren
+1;Holler, Schwarzer Holunder
+1;Holunderbeeren, Schwarzer Holunder
+1;Johannisbeere, rote
+1;Jostabeeren
+1;Kakaobutter
+1;Kaki
+1;Kirsche
+1;Kokosnuss, Kokosraspel, Kokosmilch
+1;Korinthen
+1;Kranbeere (Vaccinium macrocarpon)
+1;Kronsbeere (Vaccinium vitis-idaea)
+1;Litchi, Litschi
+1;Marille
+1;Melonen (außer Wassermelone)
+1;Nektarinen
+1;Oemeli
+1;Persimone
+1;Pfirsich
+1;Pitaya, Pitahaya, Drachenfrucht
+1;Preiselbeere
+1;Quitten
+1;Ribisel, rote
+1;Rosinen
+1;Rote Johannisbeere, Rote Ribisel
+1;Sanddorn
+1;Sauerkirsche
+1;Schwarze Johannisbeere
+1;Schwarze Ribisel
+1;Schwarzer Holunder
+1;Sharonfrucht
+1;Stachelbeeren
+1;Sternfrucht, Karambole, Karambola
+1;Sultaninen
+1;Trauben, Weintrauben
+1;Weichselkirsche
+1;Weinbeeren, getrocknet (=Rosinen)
+1;Weintrauben
+1;Chia-Samen, Mexikanische Chia (Salvia hispanica)
+1;Flohsamen, Flohsamenschalen
+1;Kürbiskerne
+1;Agavendicksaft, Agavensirup
+1;Ahornsirup
+1;Birkenzucker, Xylit, Xylitol, E967
+1;Caramel
+1;Dextrose
+1;E420, Sorbit, Sorbitol
+1;E967, Xylit, Xylitol, Birkenzucker
+1;Fruchtzucker
+1;Fructose
+1;gebrannter Zucker
+1;Glucose
+1;Glucosesirup
+1;Honig
+1;Invertzucker, Invertose, Invertzuckersirup
+1;Karamell
+1;Kristallzucker
+1;Lactose
+1;Maltose
+1;Malzzucker, rein
+1;Milchzucker
+1;Rohrzucker
+1;Rübenzucker
+1;Saccharose
+1;Sorbit, Sorbitol, Glucitol, Hexanhexol, E420
+1;Stevia (Stevia-Blätter, Steviosid flüssig/pulverförmig)
+1;Traubenzucker
+1;Xylit, Xylitol, Birkenzucker, E967
+1;Zucker
+1;Alkoholessig
+1;Branntweinessig
+1;Curcuma
+1;Essig: Alkoholessig, Branntweinessig, Weingeistessig,
+1;Essigessenz
+1;Gelbwurz (Curcuma longa)
+1;Gewürznelken, Nelken
+1;Kardamom
+1;Koriander, Echter Koriander, Gewürzkoriander, (Coriandrum
+1;Kümmel: Echter Kümmel (Carum carvi)
+1;Kurkuma
+1;Nelken, Gewürznelken
+1;Paprikapulver, mild
+1;Quendel, Thymian, Echter Thymian (Thymus vulgaris)
+1;Schwarzkümmel (Nigella sativa)
+1;Thymian, Echter Thymian (Thymus vulgaris), Quendel
+1;Wacholderbeeren
+1;Weingeistessig
+1;Zimt, Zimtstangen, Zimtpulver
+1;Leitungswasser
+1;Mineralwasser ohne Kohlensäure
+1;Eisenkraut-Tee
+1;Kamillentee
+1;Lindenblütentee
+1;Pfefferminztee
+1;Rooibostee
+1;Salbeitee
+1;Verveine-Tee
+1;Cranberry Nektar
+1;Holunderblütensirup
+1;acidum hydrochloricum, Salzsäure, Chlorwasserstoffsäure,
+1;alpha-Tocopherol, Vitamin E, E307
+1;Ammoniumcarbonat, E503
+1;Anthocyane, E163
+1;Apfelsäure, Äpfelsäure, E296
+1;Ascorbinsäure, E300
+1;Ascorbylpalmitat, E304
+1;Betanin, Betanoin, Betenrot, Beetenrot, E162
+1;Bienenwachs, E901
+1;Calciumacetat, Calciumethanoat, Kalziumacetat, E262
+1;Calciumascorbat, Calciumdiascorbat, Calcium-L-Ascorbat,
+1;Calciumcarbonat, Kalziumkarbonat, Kalk, E170
+1;Calciumlactat, Kalziumlaktat, E327
+1;Capsanthin, Paprikaextrakt, E160c
+1;Carotine, Beta-Carotin, β-Carotin, E160a
+1;Cellulose, Cellulosepulver, mikrokristalline Cellulose, E460
+1;Celluloseethylether, Ethylcellulose, Ethylzellulose, E462
+1;Cellulosemethylether, Methylcellulose, Methylzellulose, E461
+1;Curcumin, E100
+1;delta-Tocopherol, Vitamin E, E309
+1;E100, Curcumin
+1;E1103, Invertase, β-Fructofuranosidase, Saccharase
+1;E140, Chlorophylle, Chlorophylline
+1;E141, kupferhaltige Komplexe der Chlorophylle und
+1;E150, E150a: Zuckercouleur
+1;E150b, Sulfitlaugen-Zuckerkulör
+1;E150c, Ammoniak-Zuckerkulör
+1;E150d: Ammoniumsulfit-Zuckerkulör
+1;E153, Pflanzenkohle, Holzkohle
+1;E160a, Carotine, Beta-Carotin, β-Carotin
+1;E160c, Capsanthin, Paprikaextrakt
+1;E162, Betanin, Betanoin, Betenrot, Beetenrot
+1;E163, Anthocyane
+1;E170, Calciumcarbonat, Kalziumkarbonat, Kalk, kohlensaurer
+1;E171, Titandioxid, Titan(IV)-oxid, Titansäureanhydrid, Rutil,
+1;E172, Eisenoxide, Eisenhydroxide
+1;E175, Gold
+1;E250, Natriumnitrit
+1;E260, Essigsäure, Eisessig
+1;E261, Kaliumacetat, Kaliumethanoat
+1;E262, Natriumacetat, Natriumethanoat
+1;E263, Calciumacetat, Calciumethanoat, Kalziumacetat,
+1;E270, Milchsäure, 2-Hydroxypropansäure, 2-
+1;E290, Kohlendioxid gasförmig, Kohlenstoffdioxid,
+1;E296, Apfelsäure, Äpfelsäure, 2-Hydroxybutandisäure, 2-
+1;E300, Ascorbinsäure, Vitamin C
+1;E301, Natriumascorbat, Sodascorbat, Mononatrium ascorbat
+1;E302, Calciumascorbat, Calciumdiascorbat, Calcium-L-
+1;E304, Ascorbylpalmitat
+1;E306, Tocopherol, Vitamin E, tocopherolhaltige Extrakte
+1;E307, alpha-Tocopherol, α-Tocopherol, Vitamin E
+1;E308, gamma-Tocopherol, γ-Tocopherol, Vitamin E
+1;E309, delta-Tocopherol, Vitamin E
+1;E315, Isoascorbinsäure, Erythorbinsäure, Isovitamin C
+1;E316, Natriumisoascorbat, Natriumerythorbat
+1;E322, Lecithine, Lezithine
+1;E325, Natriumlactat
+1;E326, Kaliumlactat
+1;E327, Calciumlactat, Kalziumlaktat
+1;E334, Weinsäure, 2,3-Dihydroxybernsteinsäure, 2,3- Dihydroxybutandisäure, Threarsäure, Traubensäure
+1;E335, Natriumtartrat
+1;E336, Weinsteinbackpulver, Kaliumtartrat
+1;E415, Xanthan, Xantan, Xanthangummi
+1;E421, Mannit, Mannitol
+1;E422, Glycerin, Glycerol, Glyzerin, Propan-1,2,3-triol, 1,2,3-
+1;E440, Pektin
+1;E460, Cellulose, Zellulose, mikrokristalline Cellulose,
+1;E461, Methylcellulose, Methylzellulose, Cellulosemethylether
+1;E462, Ethylcellulose, Ethylzellulose, Celluloseethylether
+1;E463, Hydroxypropylcellulose
+1;E464, Hydroxypropylmethylcellulose, Hypromellose, Hypromellosum, Methylhydroxypropylzellulose, 2-
+1;E465, Ethyl Methylcellulose, Ethylmethylcellulose
+1;E500, Natriumcarbonat, Natriumkarbonat, Soda, calcinierte
+1;E500ii, Natron, Natriumhydrogencarbonat, Natriumhydrogenkarbonat, Natriumbicarbonat, Natriumbikarbonat, Backsoda, doppeltkohlensaures Natron,
+1;E501, Kaliumcarbonat, Kaliumkarbonat, Pottasche, K2CO3
+1;E503, Ammoniumcarbonat, kohlensaures Ammonium,
+1;E504, Magnesiumcarbonat
+1;E507, Salzsäure, Chlorwasserstoffsäure, acidum
+1;E579, Eisengluconat
+1;E626, Guanosinmonophosphat, Guanylsäure, Guanylat,
+1;E650, Zinkacetat
+1;E901, Bienenwachs, cera flava, cera alba
+1;E955, Sucralose
+1;E960, Steviosid, Steviol-Glykosid
+1;Eisengluconat, E579
+1;Eisenoxide, Eisenhydroxide, E172
+1;Essigsäure, E260
+1;Ethyl Methylcellulose, E465
+1;Ethylcellulose, Ethylzellulose, Celluloseethylether, E462
+1;gamma-Tocopherol, Vitamin E, E308
+1;Glycerin, Glycerol, Glyzerin, Propan-1,2,3-triol, 1,2,3- Propantriol, Propantriol, E422
+1;Gold, E175
+1;Guanosinmonophosphat, Guanylsäure, Guanylat, E626
+1;Holzkohle, Pflanzenkohle, E153
+1;Holzkohle, Pflanzenkohle, E153
+1;Hydroxypropylcellulose, E463
+1;Hydroxypropylmethylcellulose, Hypromellose, E464
+1;Hypromellose, Hydroxypropylmethylcellulose, E464
+1;Invertase, E1103
+1;Isoascorbinsäure, E315
+1;Kaliumacetat, E261
+1;Kaliumcarbonat, Kaliumkarbonat, E501
+1;Kaliumlactat, E326
+1;Kaliumtartrat, E336
+1;Kalziumacetat, Calciumacetat, Calciumethanoat, E263
+1;Kohle, Pflanzenkohle, Holzkohle, E153
+1;kupferhaltige Komplexe der Chlorophylle und Chlorophylline,
+1;Lecithine, Lezithine, E322
+1;Magnesiumcarbonat, E504
+1;Mannit, Mannitol, E421
+1;Methylcellulose, Methylzellulose, Cellulosemethylether, E461
+1;mikrokristalline Cellulose, Cellulosepulver, E460
+1;Milchsäure, 2-Hydroxypropansäure, 2-Hydroxypropionsäure,
+1;Natriumacetat, E262
+1;Natriumascorbat, E301
+1;Natriumcarbonat, Natriumkarbonat, Soda, E500
+1;Natriumisoascorbat, Natriumerythorbat, E316
+1;Natriumlactat, E325
+1;Natriumnitrit, E250
+1;Natriumtartrat, E335
+1;Natron, Natriumhydrogencarbonat, Natriumhydrogenkarbonat, Natriumbicarbonat,
+1;Pektin, Pektine, amidiertes Pektin, E440
+1;Pflanzenkohle, Holzkohle, E153
+1;Salzsäure, Chlorwasserstoffsäure, acidum hydrochloricum,
+1;Stärke (Kartoffelstärke, Maisstärke, Reisstärke,
+1;Steviosid, Steviol-Glykosid, E960
+1;Sucralose, E955
+1;Titandioxid, Titan(IV)-oxid, E171
+1;Tocopherol, Vitamin E, E306
+1;Vanillin (synthetisch), Vanillinzucker
+1;Vitamin C, E300
+1;Vitamin E, alpha-Tocopherol, E307
+1;Vitamin E, delta-Tocopherol, E309
+1;Vitamin E, gamma-Tocopherol, E308
+1;Vitamin E, Tocopherol, E306
+1;Weinsäure, E334
+1;Weinsteinbackpulver, E336
+1;Xanthan, Xantan, E415
+1;Zellulose, Cellulose, mikrokristalline Cellulose,
+1;Zinkacetat, E650
+1;Zuckercouleur, Zuckerkulör, E150, E150a
+1;Zuckercouleur: Ammoniak-Zuckerkulör, E150c
+1;Zuckercouleur: Ammoniumsulfit-Zuckerkulör, E150d
+1;Zuckercouleur: Sulfitlaugen-Zuckerkulör, E150b
+0;Eier, Hühnerei, Vollei
+0;Eiklar, Eiweiss, Eiweiß
+0;Blauschimmelkäse
+0;Cheddar Käse
+0;Edelschimmelkäse
+0;Fontina Käse
+0;Gouda Käse, gereift
+0;Käse: lange gereifte Sorten und Hartkäse (z.B. Emmentaler)
+0;Käsezubereitungen (=Mischungen mit weiteren Zutaten)
+0;Raclette Käse
+0;Rohmilchkäse
+0;Rohmilchprodukte
+0;Roquefort Käse
+0;Schimmelkäse
+0;Schmelzkäse
+0;Faschiertes (=Hackfleisch), Offenverkauf oder unter
+0;geräucherter Fisch
+0;geräuchertes Fleisch
+0;Hackfleisch, Offenverkauf oder unter Schutzatmosphäre
+0;Räucherfleisch
+0;Rauchfleisch
+0;Rohschinken
+0;Salami
+0;Trockenfleisch
+0;Wurstwaren
+0;Anchovis, Sardellen-Konserven
+0;"Fisch, ""Frischfisch"" vom Kühlregal / auf Eis"
+0;Sardellen-Konserven, Sardellenpaste, Anchovis
+0;Thunfisch
+0;(z.B. Muscheln, Austern, Krebse, Krabben, Hummer, Krevetten, Garnelen,
+0;Buchweizen
+0;Gerstenmalz, Malz
+0;Malz, Gerstenmalz
+0;Sonnenblumenkerne
+0;Weizenkeime
+0;Baumnuss
+0;Erdmandel, geröstet
+0;Erdnüsse, Erdnuss
+0;Nüsse
+0;Spanische Nüssli (=Erdnuss)
+0;Walnuss
+0;Baumnussöl
+0;Walnussöl
+0;Ackerbohne (Vicia faba)
+0;Aubergine
+0;Avocado
+0;Bohnen, diverse Arten
+0;Bohnen: Borlotti-Bohnen
+0;Brennnessel
+0;Chili, rot, frisch
+0;Cornichons, eingelegt
+0;Essiggemüse
+0;Essiggurken, eingelegt
+0;Favabohne (Vicia faba)
+0;Gewürzgurken, eingelegt
+0;Hülsenfrüchte (Soja, Bohnen, Erbsen, Linsen...)
+0;Kelp (Seetang, Riesentang, eine Alge)
+0;Kichererbse
+0;Linsen
+0;Melanzani, Melanzana
+0;Oliven
+0;Paprika, Peperoni, scharfe Sorten
+0;Paradeiser, Tomaten
+0;Peperoni, Paprika, scharfe Sorten
+0;Rucola
+0;Rukola
+0;Salzgurken, eingelegt
+0;Saubohne (Vicia faba)
+0;Sauerkraut
+0;Schmalblättriger Doppelsame, Rucola
+0;Schweinsbohne (Vicia faba)
+0;Soja (Sojabohne, Sojamehl)
+0;Spinat
+0;Tomaten
+0;Wilde Rauke
+0;Bockshornklee
+0;Kleesorten (Trigonella- und Trifolium-Arten)
+0;Schabzigerklee
+0;Ananas
+0;Avocado
+0;Banane
+0;Erdbeere
+0;Goiaba, Guave, Psidium guajava
+0;Grapefruit
+0;Guave, Guava, Guayave, Guayaba
+0;Himbeeren
+0;Kakao, Kakaopulver (Schokolade etc.)
+0;Kiwi
+0;Limette
+0;Limone
+0;Mandarine
+0;Orangen
+0;Orangenschale
+0;Papaya
+0;Zitrone
+0;Zitronenschale
+0;Zitrusfrüchte
+0;Algen und Algenbestandteile
+0;Braunalgen, Algen
+0;Gemeiner Steinpilz (Boletus edulis)
+0;Grünalgen, Algen
+0;Kombu-Algen
+0;Meeresalgen, Meeralgen
+0;Morcheln
+0;Nori-Algen
+0;Pilze, diverse Arten
+0;Rotalgen, Algen
+0;Schwammerl
+0;Seetang, Algen
+0;Steinpilze
+0;Wakame-Algen
+0;Malzextrakt
+0;Süssholz, Süßholz
+0;Bouillon
+0;Brühe, Brühwürfel/-pulver
+0;Cumin
+0;Curry
+0;Essig: Aceto Balsamico, Balsamessig
+0;Essig: Rotweinessig
+0;Essig: Weissweinessig
+0;Fleischextrakt
+0;Hefeextrakt
+0;Kreuzkümmel (Cuminum cyminum)
+0;Kumin
+0;Paprikapulver, scharf
+0;Pfeffer, schwarz
+0;Pfeffer, weiß
+0;Senf, Senfkörner, Senfsamenpulver
+0;Sojasauce
+0;Würze, Speisewürze, Suppenwürze (pflanzliches
+0;Alkohol, rein (Ethanol)
+0;Alkoholhaltige Getränke
+0;Bier
+0;Champagner
+0;Ethanol, Ethylalkohol
+0;Rhum
+0;Schnäpse, klar (farblos)
+0;Schnäpse, nicht klar (nicht farblos)
+0;Sekt
+0;Spirituosen, klar (farblos)
+0;Spirituosen, nicht klar (nicht farblos)
+0;Wein
+0;Wein: Rotwein
+0;Wein: Schilcherwein
+0;Wein: Weisswein, Weißwein
+0;Weinbrand, Brandy
+0;Schwarztee
+0;Orangensaft
+0;Sojamilch, Soja-Drink
+0;heisse Schokolade, heiße Schokolade
+0;Kakaogetränke
+0;Ovomaltine
+0;Schokoladengetränke
+0;2-Phenylphenol, E231
+0;Acid Red 1, E128
+0;Alginat, Propylenglycolalginat, E405
+0;Alginsäure, Algin, E400
+0;Allurarot AC, E129, Food Red 17, CI 16035
+0;Amaranth E123
+0;Ammoniumalginat, E403
+0;Azophloxin, E128
+0;Azorubin, Karmesin, E122
+0;Benzoesäure und deren Salze = Benzoate, E210 bis E213
+0;Benzoesäure, E210
+0;Braun FK, E154
+0;Braun HT, Braun HTK, E155, C.I. 20285, C.I. Food Brown 3
+0;Brillantschwarz BN, Brillantschwarz FCF, Schwarz PN, E151,
+0;Butylhydroxyanisol, BHA, E320
+0;Butylhydroxytoluol, Butylhydroxytoluen, BHT, E321
+0;Calciumalginat, E404
+0;Calciumbenzoat, E213
+0;Calciumdiglutamat, Calciumglutamat, E623
+0;Calciumhydrogensulfit, E227
+0;Calciumpolyphosphat, E452
+0;Calciumsorbat, E203
+0;Calciumsulfit, E226
+0;Carob, Carobpulver
+0;Carrageen, Carragaheen, E407, E407a
+0;Carubin, Carubenmehl, E410
+0;Chinin (z.B. in Bitterlemon, Tonic Water)
+0;Chinolingelb
+0;Chinolingelb, E104
+0;Cochenille, Karmin, E120
+0;Cochenillerot A, Ponceau 4R, E124
+0;Dodecylgallat, E312
+0;E102, Tartrazin
+0;E110, Gelborange S
+0;E120, Karmin, Cochenille
+0;E122, Karmesin, Azorubin
+0;E123, Amaranth
+0;E124, Cochenillerot A, Ponceau 4R
+0;E127, Erythrosin
+0;E128, Azophloxin, Rot 2G
+0;E129, Allurarot AC, Food Red 17, CI 16035
+0;E131, Patentblau V
+0;E132, Indigokarmin, Indigocarmin, Indigotin I
+0;E151, Brillantschwarz BN, Brillantschwarz FCF, Schwarz PN,
+0;E154, Braun FK
+0;E155, Braun HT, Braun HTK, C.I. 20285, C.I. Food Brown 3
+0;E160b, Bixin, Norbixin, Annatto
+0;E180, Litholrubin BK, Rubinpigment BK, 4B-Toner, C.I. 15850:1,
+0;E200, Sorbinsäure
+0;E202, Kaliumsorbat
+0;E203, Calciumsorbat
+0;E210 bis E213: Benzoesäure und deren Salze = Benzoate
+0;E210, Benzoesäure
+0;E211, Natriumbenzoat
+0;E212, Kaliumbenzoat
+0;E213, Calciumbenzoat
+0;E214, E215, Ethylparaben
+0;E218, E219, Methylparaben
+0;E220 - E228, Sulfite
+0;E220, Schwefeldioxid
+0;E221, Natriumsulfit
+0;E222, Natriumhydrogensulfit, Natriumbisulfit
+0;E223, Natriumdisulfit, Natriummetabisulfit
+0;E224, Kaliumdisulfit, Kaliummetabisulfit
+0;E225, Kaliumsulfit
+0;E226, Calciumsulfit
+0;E227, Calciumhydrogensulfit
+0;E228, Kaliumhydrogensulfit
+0;E231, Orthophenylphenol
+0;E232, Natriumorthophenylphenolat
+0;E239, Hexamethylentetramin, Urotropin, Methenamin,
+0;E310, Propylgallat, Propylgallat, E310
+0;E311, Octylgallat
+0;E312, Dodecylgallat, Laurylgallat, Gallussäuredodecylester,
+0;E320, Butylhydroxyanisol, BHA
+0;E321, Butylhydroxytoluol, Butylhydroxytoluen, BHT
+0;E400, Alginsäure, Algin
+0;E401, Natriumalginat
+0;E402, Natriumalginat
+0;E403, Ammoniumalginat
+0;E404, Calciumalginat, Kalziumalginat
+0;E405, Alginat, Algin, Propylenglycolalginat
+0;E407, E407a, Carrageen, Karrageen
+0;E410, Johannisbrotkernmehl, Carubin, Carubenmehl
+0;E413, Traganth, Tragant
+0;E452, Polyphosphate: Natrium-, Kalium-, Natriumcalcium-
+0;E620, Glutaminsäure, (Glutamat)
+0;E620-E625, Glutamate, Geschmacksverstärker
+0;E621, Mononatriumglutamat, Natriumglutamat
+0;E622, Monokaliumglutamat, Kaliumglutamat
+0;E623, Calciumdiglutamat, Calciumglutamat, Kalziumglutamat
+0;E624, Monoammoniumglutamat, Ammoniumglutamat
+0;E625, Magnesiumdiglutamat, Magnesiumglutamat
+0;Erythrosin, E127
+0;Ethylparaben, E214, E215
+0;Gelborange S, E110
+0;Geschmacksverstärker, E620-E625
+0;Glutamate, E620-E625
+0;Glutaminsäure, (Glutamat), E620
+0;Hexamethylentetramin, Urotropin, Methenamin, Formin,
+0;Indigokarmin, Indigocarmin, Indigotin I, E132
+0;Johannisbrot, Johannisbrotpulver
+0;Johannisbrotkernmehl, E410
+0;Kaftan
+0;Kaliumbenzoat, E212
+0;Kaliumdisulfit, E224
+0;Kaliumhydrogensulfit, E228
+0;Kaliummetabisulfit, E224
+0;Kaliumpolyphosphat, E452
+0;Kaliumpyrosulfit, E224
+0;Kaliumsorbat, E202
+0;Kaliumsulfit, E225
+0;Kalziumalginat, Calciumalginat, E404
+0;Kalziumglutamat, E623
+0;Karmesin, Azorubin, E122
+0;Karmin, Cochenille, E120
+0;Karrageen, Karragheen, E407, E407a
+0;Karubenmehl, Johannisbrotkernmehl, E410
+0;Litholrubin BK, E180
+0;Magnesiumdiglutamat, Magnesiumglutamat, E625
+0;Methylparaben, E218, E219
+0;Monoammoniumglutamat, Ammoniumglutamat, E624
+0;Monokaliumglutamat, Kaliumglutamat, E622
+0;Mononatriumglutamat, Natriumglutamat,
+0;Natriumalginat, E401
+0;Natriumalginat, E402
+0;Natriumbenzoat, E211
+0;Natriumbisulfit, E222
+0;Natriumcalciumpolyphosphat, E452
+0;Natriumdisulfit, E223
+0;Natriumhydrogensulfit, E222
+0;Natriummetabisulfit, E223
+0;Natriumorthophenylphenolat, E232
+0;Natriumpolyphosphat, E452
+0;Natriumpyrosulfit, E223
+0;Natriumsulfit, E221
+0;Octylgallat, E311
+0;Orthophenylphenol, E231
+0;Parabene = PHB-Ester, E214-E219, Methyl-, Ethyl-, Propyl-,
+0;Patentblau V, E131
+0;Propylenglycolalginat, Alginat, E405
+0;Rot 2G, E128
+0;Salicylat, Salicylsäure
+0;Schwefeldioxid E220
+0;Sorbate (=Salze der Sorbinsäure): Kaliumsorbat, E202,
+0;Sorbinsäure, E200
+0;Sulfite, E220 - E228
+0;Tartrazin, E102
+0;Traganth, Tragant, E413
+0;Urotropin, Hexamethylentetramin, Methenamin, Formin,
+0;Folsäure, Folat, Vitamin B9
+0;Iod, Jod
+0;Jodsalz, Iodsalz (Jodzusatz in Form von Kaliumiodid,
+0;Jodtabletten für den atomaren Störfall
+0;Kaliumiodat, Kaliumjodat
+0;Kaliumiodid, Kaliumjodid
+0;Kochsalz iodiert / jodiert
+0;Theobromin
+0;"Lakritze, ""Bärendreck"""
+0;Schokolade, braun / schwarz / dunkel
+0;Senf (Zubereitung)
+0;Tofu
+null;Butter: Sauerrahmbutter, mildgesäuerte Butter
+null;Buttermilch, angesäuert
+null;crème fraïche
+null;Feta Käse
+null;Joghurt nature
+null;Kefir
+null;Milch, laktosefrei
+null;Milchpulver
+null;Sauerrahm
+null;saure Sahne
+null;Umstritten. Kann auch gut verträglich sein. Sehr verderblich.
+null;Wildbret
+null;Wildfleisch
+null;Backwaren
+null;Brot
+null;Gerste
+null;Roggen
+null;Weizen
+null;Cashewnüsse
+null;Haselnuss
+null;Mandeln
+null;Pinienkerne
+null;Sonnenblumenöl
+null;Bohnen: Buschbohnen, Grüne Bohnen
+null;Brüsseler Kohl
+null;Buschbohnen, Grüne Bohnen
+null;Erbsen: Gartenerbsen
+null;Erbsen: gelbe Spalterbse
+null;Erbsen: grüne Spalterbse
+null;Fisolen, Buschbohne (Phaseolus vulgaris var. nanus)
+null;Gartenerbsen
+null;Gelbe Spalterbse
+null;Grüne Spalterbse
+null;Kaiserschote
+null;Kefen
+null;Kiefelerbse
+null;Knoblauch
+null;Kohlrabi
+null;Kohlsprossen, Rosenkohl
+null;Krautstiele (Beta vulgaris subsp. vulgaris)
+null;Kren, Meerrettich
+null;Lauch
+null;Mangold
+null;Meerrettich
+null;Porree
+null;Rosenkohl
+null;Sprossenkohl, Rosenkohl
+null;Welschkohl, Welschkraut, Wirsing
+null;Wirsing, Wirz, Wirsingkohl, Welschkohl, Welschkraut, (österr.:
+null;Zuckererbse, Zuckerschote
+null;Zwiebeln: alle Sorten außer Weiße Zwiebel
+null;Bärlauch (Allium ursinum)
+null;Dill
+null;Schnittlauch
+null;Birne
+null;Birne, geschält, Konserve in Zuckersirup
+null;Feigen, frisch oder getrocknet
+null;Hagebutte
+null;Hunds-Rose, Hundsrose (Rosa canina)
+null;Mango
+null;Pflaumen-Arten
+null;Rhabarber
+null;Wassermelonen
+null;Zwetschge (Prunus domestica subsp. domestica)
+null;Sesam
+null;Backhefe, Bäckerhefe (frisch / getrocknet)
+null;Bierhefe (frisch / getrocknet)
+null;Champignons
+null;Gest, Germ, Hefe (frisch / getrocknet)
+null;Hefe (frisch / getrocknet)
+null;Künstliche Süssstoffe, künstliche Süßstoffe
+null;Essig: Apfelessig
+null;Ingwer
+null;Mohnsamen
+null;Muskatnuss
+null;Vanille, Vanilleschoten, Vanillepulver, Vanillezucker
+null;Vanilleextrakt
+null;Heilquellen-Wasser mit viel Schwefel/Kohlensäure/Fluor/Iod
+null;Wein, histaminfrei (<0.1 mg/l)
+null;Brennnesseltee
+null;Grüntee
+null;Kräuterteemischungen aus Heilkräutern, z.B.
+null;Mate Tee
+null;Kaffee
+null;Hafer-Drink
+null;Reismilch, Reis-Drink
+null;Limonadengetränke
+null;Agar-Agar, E406
+null;Ammoniumcitrat, Triammoniumcitrat, E380
+null;Aroma, Aromen, Aromastoffe
+null;Calciumcitrat, E333
+null;Calciumphosphate, E340
+null;Citronensäure E330
+null;E101a, Riboflavin-5-Phosphat
+null;E1201, Povidon, Polyvinylpyrrolidon, Polyvidone, 1-Vinyl-2- pyrrolidinon-Polymer, PVP, 1-Ethenyl-2-pyrrolidon-
+null;E1202, Polyvinylpolypyrrolidon
+null;E330, Citronensäure
+null;E331, Natriumcitrat, Trinatriumcitrat, Natriumzitrat, Trinatriumzitrat
+null;E332, Kaliumcitrat
+null;E333, Calciumcitrat, Tricalciumcitrat, Tricalciumdicitrat
+null;E340, Kaliumphosphate: Kaliumdihydrogenphosphat (KH2PO4, Monokaliumphosphat), Dikaliumhydrogenphosphat (K2HPO4, Dikaliumphosphat), Kaliumphosphat (K3PO4, Trikaliumphosphat)
+null;E341, Calciumphosphate: Calciumdihydrogenphosphat (CaH2PO4, Monocalciumphosphat), Dicalciumhydrogenphosphat (Ca2HPO4, Dicalciumphosphat), Calciumphosphat (Ca3PO4, Tricalciumphosphat)
+null;E380, Ammoniumcitrat, Triammoniumcitrat,
+null;E406, Agar-Agar
+null;E412, Guarkernmehl
+null;E414, Gummi arabicum, Gummiarabikum
+null;E416, Karaya, Indischer Traganth, Karayagummi, Sterculia-
+null;E441, Gelatine
+null;Flavinmononukleotid, E101a
+null;Gelatine E441
+null;Gluten, Weizenkleber
+null;Guarkernmehl, Guaran, E412
+null;Gummi arabicum, Gummiarabikum, E414
+null;Indischer Traganth, Karayagummi, E416
+null;Kaliumcitrat, E332
+null;Kaliumphosphate, E340
+null;Karaya, Karayagummi, Indischer Traganth, E416
+null;Kohlensäure H2CO3, gelöstes CO2 in kohlensäurehaltigen
+null;Mineralwasser mit Kohlensäure
+null;Polyvinylpolypyrrolidon, E1202
+null;Polyvinylpyrrolidon, Povidon, Polyvidone, E1201
+null;Povidon, Polyvinylpyrrolidon, Polyvidone, E1201
+null;Riboflavin-5-Phosphat, E101a
+null;Sterculia-Gummi, Karayagummi, E416
+null;Triammoniumcitrat, Ammoniumcitrat, E380
+null;Weizenkleber, Gluten
+null;Zitronensäure E330
+null;Marzipan
+null;Schokolade, weiss
+null;weiße Schokolade
