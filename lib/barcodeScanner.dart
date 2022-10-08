@@ -135,7 +135,8 @@ class BarcodeScannerState extends State<BarcodeScanner> {
         home: Scaffold(
             backgroundColor: const Color(0xffffffff),
             appBar: AppBar(
-              title: const Text('Barcode scan'),
+              title: const Text('Produkterkennung'),
+              backgroundColor: const Color(0xff6200ee),
             ),
             body: Builder(builder: (BuildContext context) {
               return Container(
@@ -147,11 +148,13 @@ class BarcodeScannerState extends State<BarcodeScanner> {
                         Image.asset('assets/images/logo.png'),
                         ElevatedButton(
                             onPressed: () => scanBarcodeNormal(),
-                            child: const Text('PRODUKT SCANNEN',
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xff6200ee),
+                            ),
+                            child: const Text('Produkt erkennen',
                                 style: TextStyle(
                                   fontFamily: 'Segoe UI',
                                   fontSize: 20,
-                                  color: Color(0xff6200ee),
                                 ))),
                         //Text('Scan result : $_scanBarcode\n',
                         //    style: TextStyle(fontSize: 20))

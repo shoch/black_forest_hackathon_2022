@@ -12,7 +12,10 @@ class ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: const Text('Barcode scan')),
+            appBar: AppBar(
+              title: const Text('Barcode scan'),
+              backgroundColor: const Color(0xff6200ee),
+            ),
             body: Builder(builder: (BuildContext context) {
               return Container(child: Text('profile'));
             }),

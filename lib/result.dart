@@ -28,7 +28,10 @@ class ResultState extends State<Result> {
 
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: const Text('Ergebnis')),
+            appBar: AppBar(
+              title: const Text('Ergebnis'),
+              backgroundColor: const Color(0xff6200ee),
+            ),
             body: Builder(builder: (BuildContext context) {
               return Container(
                   alignment: Alignment.center,
@@ -37,7 +40,6 @@ class ResultState extends State<Result> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text('Barcode $barcode and Histamines $result_hist '),
-                        //Image(image: AssetImage(imageName))
                         Image.asset(imageName)
                       ]));
             }),
