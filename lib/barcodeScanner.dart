@@ -22,49 +22,50 @@ class BarcodeScanner extends StatefulWidget {
 
 class BarcodeScannerState extends State<BarcodeScanner> {
   String _scanBarcode = 'Unknown';
-  List<List<dynamic>> _histamin_data = [];
+  bool _histamin = false;
+  List<dynamic> _histamin_data = [];
   @override
   void initState() {
     super.initState();
   }
 
-  Future<List<dynamic>> getHistamin() async {
-    final input =
-        new File('assets/histamin_vertr__glichkeiten2.csv').openRead();
-    final fields = await input
-        .transform(utf8.decoder)
-        .transform(new CsvToListConverter(fieldDelimiter: ';'))
-        .toList();
-    return fields;
-  }
-
   void _loadCSV() async {
     final _rawData = await rootBundle.loadString("assets/histamin.csv");
-    List<List<dynamic>> _listData =
-        const CsvToListConverter().convert(_rawData);
+    List<dynamic> _listData = const CsvToListConverter().convert(_rawData);
     setState(() {
       _histamin_data = _listData;
     });
   }
 
-  Future<List<Ingredient>?> getProduct(String barcode) async {
+  Future<List<Ingredient>> getProduct(String barcode) async {
     //var barcode = '0048151623426';
     //"026590004013
     String _barcode = barcode;
-    ProductQueryConfiguration configuration = ProductQueryConfiguration(
-        _barcode,
+    ProductQueryConfiguration configurations = ProductQueryConfiguration(
+        barcode,
         language: OpenFoodFactsLanguage.GERMAN,
-        fields: [ProductField.ALL]);
+        fields: [
+          ProductField.NUTRIMENTS,
+          ProductField.INGREDIENTS_TEXT,
+          ProductField.INGREDIENTS,
+          ProductField.ADDITIVES,
+          ProductField.NUTRIENT_LEVELS
+        ]);
 
-    ProductResult result = await OpenFoodAPIClient.getProductRaw(
-        barcode, OpenFoodFactsLanguage.GERMAN);
+    ProductResult result = await OpenFoodAPIClient.getProduct(configurations);
+    List<Ingredient> realIngredients = [];
 
     if (result.status != 1) {
-      throw Exception('product not found, please insert data for $barcode');
+      return realIngredients;
     }
 
     List<Ingredient>? ingredients = result.product!.ingredients;
-    return ingredients;
+
+    for (var i = 0; i < ingredients!.length; i++) {
+      realIngredients.add(ingredients[i]);
+    }
+
+    return realIngredients;
   }
 
   Future<void> scanBarcodeNormal() async {
@@ -83,11 +84,33 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     // setState to update our non-existent appearance.
     if (!mounted) return;
 
-    var ingredients = getProduct(barcodeScanRes);
-    var histamin = getHistamin();
+    List<Ingredient> ingredients = await getProduct(barcodeScanRes);
+    List<String?> ingredients_text = [];
+    for (var i = 0; i < ingredients.length; i++) {
+      ingredients_text.add(ingredients[i].text);
+    }
 
+    var product_ingredients_text_set = ingredients_text.toSet();
+    _loadCSV();
+
+    var histamin_data = _histamin_data;
+
+    var histamin_ingredients =
+        _histamin_data.where((element) => element[0] == 0);
+
+    var histamin_ingredients_set = histamin_ingredients.toSet();
+
+    bool histamin = product_ingredients_text_set
+        .intersection(histamin_ingredients_set)
+        .isNotEmpty;
+
+    print(histamin);
     setState(() {
       _scanBarcode = barcodeScanRes;
+    });
+
+    setState(() {
+      _histamin = histamin;
     });
 
     Navigator.of(context).pushReplacement(//new
@@ -95,7 +118,7 @@ class BarcodeScannerState extends State<BarcodeScanner> {
             //new
             settings: const RouteSettings(name: routes.result), //new
             builder: (context) => new Result(
-                passedBarcode: _scanBarcode, passedResult: false)) //new
+                passedBarcode: _scanBarcode, passedResult: _histamin)) //new
         ); //new
   }
 
