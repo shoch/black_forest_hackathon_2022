@@ -21,10 +21,6 @@ class BarcodeScanner extends StatefulWidget {
 }
 
 class BarcodeScannerState extends State<BarcodeScanner> {
-  String _scanBarcode = 'Unknown';
-  bool _histamin = false;
-  String _prodName = 'Unknown Name';
-
 //  List<dynamic> _histamin_data = [];
   @override
   void initState() {
@@ -51,6 +47,8 @@ class BarcodeScannerState extends State<BarcodeScanner> {
           ProductField.IMAGES,
           ProductField.GENERIC_NAME,
           ProductField.NAME_IN_LANGUAGES,
+          ProductField.NAME,
+          ProductField.NAME_ALL_LANGUAGES,
         ]);
 
     ProductResult result = await OpenFoodAPIClient.getProduct(configurations);
@@ -61,6 +59,27 @@ class BarcodeScannerState extends State<BarcodeScanner> {
 
     var name = result.product!.productName;
     return name ?? '';
+  }
+
+  Future<String> getImageUrl(String barcode) async {
+    String _barcode = barcode;
+    ProductQueryConfiguration configurations = ProductQueryConfiguration(
+        barcode,
+        language: OpenFoodFactsLanguage.GERMAN,
+        fields: [
+          ProductField.ALL,
+        ]);
+
+    ProductResult result = await OpenFoodAPIClient.getProduct(configurations);
+
+    if (result.status != 1) {
+      return '';
+    }
+
+    var images = result.product!.images;
+    var img_org =
+        images?.where((element) => element.size == ImageSize.ORIGINAL).toList();
+    return img_org?[0].url ?? '';
   }
 
   Future<List<Ingredient>> getIngredients(String barcode) async {
@@ -90,7 +109,7 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     if (ingredients == null) return realIngredients;
     // todo warn
 
-    for (var i = 0; i < ingredients!.length; i++) {
+    for (var i = 0; i < ingredients.length; i++) {
       realIngredients.add(ingredients[i]);
     }
 
@@ -114,10 +133,13 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     if (!mounted) return;
 
     List<Ingredient> ingredients = await getIngredients(barcodeScanRes);
+
+    if (ingredients.length == 0) {
+      //todo
+      print(barcodeScanRes);
+    }
+
     var prodName = await getProductText(barcodeScanRes);
-    setState(() {
-      _prodName = prodName;
-    });
     List<String?> ingredients_text = [];
     for (var i = 0; i < ingredients.length; i++) {
       ingredients_text.add(ingredients[i].text);
@@ -134,23 +156,17 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     bool histamin = product_ingredients_text_set
         .intersection(histamin_ingredients_set)
         .isNotEmpty;
-
-    setState(() {
-      _scanBarcode = barcodeScanRes;
-    });
-
-    setState(() {
-      _histamin = histamin;
-    });
+    String img_url = await getImageUrl(barcodeScanRes);
 
     Navigator.of(context).pushReplacement(//new
         MaterialPageRoute(
             settings: const RouteSettings(name: routes.result), //new
             builder: (context) => new Result(
-                  passedBarcode: _scanBarcode,
-                  passedResult: _histamin,
-                  passedprodName: _prodName,
-                )) //new
+                passedBarcode: barcodeScanRes,
+                passedResult: histamin,
+                passedprodName: prodName,
+                passedIncredientesCount: ingredients.length,
+                passedImageURL: img_url)) //new
         ); //new
   }
 

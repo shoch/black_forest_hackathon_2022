@@ -17,7 +17,11 @@ void main() {
       routes.barcodeScanner: (context) => BarcodeScanner(),
       routes.profile: (context) => Profile(),
       routes.result: (context) => Result(
-          passedBarcode: 'routes', passedResult: false, passedprodName: '-'),
+          passedBarcode: 'routes',
+          passedResult: false,
+          passedprodName: '-',
+          passedIncredientesCount: -1,
+          passedImageURL: ''),
     },
   ));
 }
