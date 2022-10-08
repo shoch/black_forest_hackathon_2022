@@ -23,6 +23,8 @@ class BarcodeScanner extends StatefulWidget {
 class BarcodeScannerState extends State<BarcodeScanner> {
   String _scanBarcode = 'Unknown';
   bool _histamin = false;
+  String _prodName = 'Unknown Name';
+
 //  List<dynamic> _histamin_data = [];
   @override
   void initState() {
@@ -33,14 +35,35 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     final _rawData = await rootBundle.loadString("assets/histamin.csv");
     List<dynamic> _listData = const CsvToListConverter().convert(_rawData);
     return _listData;
-    //setState(() {
-    //  _histamin_data = _listData;
-    //});
   }
 
-  Future<List<Ingredient>> getProduct(String barcode) async {
-    //var barcode = '0048151623426';
-    //"026590004013
+  Future<String> getProductText(String barcode) async {
+    String _barcode = barcode;
+    ProductQueryConfiguration configurations = ProductQueryConfiguration(
+        barcode,
+        language: OpenFoodFactsLanguage.GERMAN,
+        fields: [
+          ProductField.NUTRIMENTS,
+          ProductField.INGREDIENTS_TEXT,
+          ProductField.INGREDIENTS,
+          ProductField.ADDITIVES,
+          ProductField.NUTRIENT_LEVELS,
+          ProductField.IMAGES,
+          ProductField.GENERIC_NAME,
+          ProductField.NAME_IN_LANGUAGES,
+        ]);
+
+    ProductResult result = await OpenFoodAPIClient.getProduct(configurations);
+
+    if (result.status != 1) {
+      return '';
+    }
+
+    var name = result.product!.productName;
+    return name ?? '';
+  }
+
+  Future<List<Ingredient>> getIngredients(String barcode) async {
     String _barcode = barcode;
     ProductQueryConfiguration configurations = ProductQueryConfiguration(
         barcode,
@@ -90,7 +113,11 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     // setState to update our non-existent appearance.
     if (!mounted) return;
 
-    List<Ingredient> ingredients = await getProduct(barcodeScanRes);
+    List<Ingredient> ingredients = await getIngredients(barcodeScanRes);
+    var prodName = await getProductText(barcodeScanRes);
+    setState(() {
+      _prodName = prodName;
+    });
     List<String?> ingredients_text = [];
     for (var i = 0; i < ingredients.length; i++) {
       ingredients_text.add(ingredients[i].text);
@@ -117,11 +144,13 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     });
 
     Navigator.of(context).pushReplacement(//new
-        new MaterialPageRoute(
-            //new
+        MaterialPageRoute(
             settings: const RouteSettings(name: routes.result), //new
             builder: (context) => new Result(
-                passedBarcode: _scanBarcode, passedResult: _histamin)) //new
+                  passedBarcode: _scanBarcode,
+                  passedResult: _histamin,
+                  passedprodName: _prodName,
+                )) //new
         ); //new
   }
 

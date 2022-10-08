@@ -20,19 +20,19 @@ Widget createDrawer(BuildContext context) {
       ),
       ListTile(
           leading: Icon(Icons.monetization_on),
-          title: Text('BarcodeScanner'),
+          title: Text('Produkterkennung'),
           onTap: () {
             Navigator.pushReplacementNamed(context, routes.barcodeScanner);
           }),
       ListTile(
           leading: Icon(Icons.pie_chart),
-          title: Text('Profile'),
+          title: Text('Profil'),
           onTap: () {
             Navigator.pushReplacementNamed(context, routes.profile);
           }),
       ListTile(
           leading: Icon(Icons.category),
-          title: Text('Result'),
+          title: Text('Letzte Ergebnis'),
           onTap: () {
             Navigator.pushReplacementNamed(context, routes.result);
           }),
