@@ -19,11 +19,12 @@ class ResultState extends State<Result> {
   @override
   Widget build(BuildContext context) {
     var barcode = widget.passedBarcode;
+    var result_hist = widget.passedResult;
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: const Text('Result ')),
             body: Builder(builder: (BuildContext context) {
-              return Container(child: Text('result $barcode '));
+              return Container(child: Text('result $barcode $result_hist '));
             }),
             drawer: createDrawer(context)));
   }
