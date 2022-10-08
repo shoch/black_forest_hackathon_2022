@@ -63,6 +63,7 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     List<Ingredient>? ingredients = result.product!.ingredients;
 
     if (ingredients == null) return realIngredients;
+    // todo warn
 
     for (var i = 0; i < ingredients!.length; i++) {
       realIngredients.add(ingredients[i]);
