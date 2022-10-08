@@ -50,7 +50,9 @@ class BarcodeScannerState extends State<BarcodeScanner> {
           ProductField.INGREDIENTS_TEXT,
           ProductField.INGREDIENTS,
           ProductField.ADDITIVES,
-          ProductField.NUTRIENT_LEVELS
+          ProductField.NUTRIENT_LEVELS,
+          ProductField.IMAGES,
+          ProductField.GENERIC_NAME
         ]);
 
     ProductResult result = await OpenFoodAPIClient.getProduct(configurations);
@@ -113,12 +115,6 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     setState(() {
       _histamin = histamin;
     });
-
-    //if (_histamin) {
-    //  Navigator.pushReplacementNamed(context, routes.traffic_light_red);
-    //} else {
-    //  Navigator.pushReplacementNamed(context, routes.traffic_light_green);
-    //}
 
     Navigator.of(context).pushReplacement(//new
         new MaterialPageRoute(
