@@ -152,8 +152,6 @@ class BarcodeScannerState extends State<BarcodeScanner> {
                                   fontFamily: 'Segoe UI',
                                   fontSize: 20,
                                 ))),
-                        //Text('Scan result : $_scanBarcode\n',
-                        //    style: TextStyle(fontSize: 20))
                       ]));
             }),
             drawer: createDrawer(context)));
