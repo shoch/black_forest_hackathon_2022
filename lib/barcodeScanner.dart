@@ -23,18 +23,19 @@ class BarcodeScanner extends StatefulWidget {
 class BarcodeScannerState extends State<BarcodeScanner> {
   String _scanBarcode = 'Unknown';
   bool _histamin = false;
-  List<dynamic> _histamin_data = [];
+//  List<dynamic> _histamin_data = [];
   @override
   void initState() {
     super.initState();
   }
 
-  void _loadCSV() async {
+  Future<List<dynamic>> _loadCSV() async {
     final _rawData = await rootBundle.loadString("assets/histamin.csv");
     List<dynamic> _listData = const CsvToListConverter().convert(_rawData);
-    setState(() {
-      _histamin_data = _listData;
-    });
+    return _listData;
+    //setState(() {
+    //  _histamin_data = _listData;
+    //});
   }
 
   Future<List<Ingredient>> getProduct(String barcode) async {
@@ -91,20 +92,17 @@ class BarcodeScannerState extends State<BarcodeScanner> {
     }
 
     var product_ingredients_text_set = ingredients_text.toSet();
-    _loadCSV();
+    List<dynamic> histamin_data = await _loadCSV();
 
-    var histamin_data = _histamin_data;
-
-    var histamin_ingredients =
-        _histamin_data.where((element) => element[0] == 0);
-
+    var histamin_ingredients = histamin_data
+        .where((element) => element[0] == 0)
+        .map((value) => value[1]);
     var histamin_ingredients_set = histamin_ingredients.toSet();
 
     bool histamin = product_ingredients_text_set
         .intersection(histamin_ingredients_set)
         .isNotEmpty;
 
-    print(histamin);
     setState(() {
       _scanBarcode = barcodeScanRes;
     });
