@@ -21,7 +21,6 @@ class BarcodeScanner extends StatefulWidget {
 }
 
 class BarcodeScannerState extends State<BarcodeScanner> {
-//  List<dynamic> _histamin_data = [];
   @override
   void initState() {
     super.initState();
@@ -134,11 +133,6 @@ class BarcodeScannerState extends State<BarcodeScanner> {
 
     List<Ingredient> ingredients = await getIngredients(barcodeScanRes);
 
-    if (ingredients.length == 0) {
-      //todo
-      print(barcodeScanRes);
-    }
-
     var prodName = await getProductText(barcodeScanRes);
     List<String?> ingredients_text = [];
     for (var i = 0; i < ingredients.length; i++) {
@@ -153,9 +147,13 @@ class BarcodeScannerState extends State<BarcodeScanner> {
         .map((value) => value[1]);
     var histamin_ingredients_set = histamin_ingredients.toSet();
 
-    bool histamin = product_ingredients_text_set
+    bool? histamin = null;
+    histamin = product_ingredients_text_set
         .intersection(histamin_ingredients_set)
         .isNotEmpty;
+    if (ingredients.length == 0) {
+      histamin = null;
+    }
     String img_url = await getImageUrl(barcodeScanRes);
 
     Navigator.of(context).pushReplacement(//new

@@ -16,7 +16,7 @@ class Result extends StatefulWidget {
       required this.passedImageURL})
       : super(key: key);
   final String passedBarcode;
-  final bool passedResult;
+  final bool? passedResult;
   final String passedprodName;
   final int passedIncredientesCount;
   final String passedImageURL;
@@ -35,7 +35,11 @@ class ResultState extends State<Result> {
     var imageURL = widget.passedImageURL;
 
     String imageName = 'assets/images/ampel_gruen.png';
-    if (resultHist) {
+    if (resultHist == null) {
+      imageName = 'assets/images/ampel_grau.png';
+    }
+
+    if (resultHist != null && resultHist) {
       imageName = 'assets/images/ampel_rot.png';
     }
 
