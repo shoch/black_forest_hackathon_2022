@@ -184,7 +184,9 @@ class BarcodeScannerState extends State<BarcodeScanner> {
                       direction: Axis.vertical,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Image.asset('assets/images/logo.png'),
+                        Image.asset(
+                          'assets/images/logo.png',
+                        ),
                         ElevatedButton(
                             onPressed: () => scanBarcodeNormal(),
                             style: ElevatedButton.styleFrom(

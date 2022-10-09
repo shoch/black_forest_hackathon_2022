@@ -61,10 +61,10 @@ class ResultState extends State<Result> {
                           height: 350,
                         ),
                         Text(''),
-                        Image.network(
-                          imageURL,
-                          height: 300,
-                        ),
+                        Image.network(imageURL,
+                            height: 300,
+                            errorBuilder: (BuildContext context, url, error) =>
+                                new Icon(Icons.error)),
                         Text(''),
                         Text('Barcode: $barcode'),
                         Text('ProductName: $prodName'),

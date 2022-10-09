@@ -1,6 +1,12 @@
 # black_forest_hackathon_2022
 
-A new Flutter project.
+Thema: Wir entwickeln eine Software-API, die für die Integrierung in die Apps der Lebensmitteleinzelhändler gedacht ist. Kunden mit Allergien oder speziellen Ernährungsgewohnheiten erstellen ein Profil, in dem sie mögliche Allergien oder Inhaltsstoffe, die nicht zu ihrer Ernährung passen, angeben können. In den Läden können die Kunden ein Produkt scannen und erhalten mittels Ampel ein Ergebnis, inwiefern in einem Lebensmittel für sie verbotene Inhaltsstoffe vorhanden sind.
+
+
+## Deployment Android
+https://www.kobiton.com/blog/develop-deploy-and-test-flutter-apps
+flutter build apk
+
 
 ## Getting Started
 
