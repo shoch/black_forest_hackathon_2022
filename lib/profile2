@@ -1,23 +1,37 @@
-import 'package:multiselect_formfield/multiselect_formfield.dart';
-
-import 'drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:toggle_switch/toggle_switch.dart';
-import 'package:flutter/foundation.dart';
-import 'package:sticky_headers/sticky_headers.dart';
-
-class Profile extends StatefulWidget {
+import 'package:multiselect_formfield/multiselect_formfield.dart';
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
   @override
-  ProfileState createState() => ProfileState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(),
+    );
+  }
 }
-
-class ProfileState extends State<Profile> {
-  bool profil_histamin = true;
-  bool profil_other = false;
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+class _MyHomePageState extends State<MyHomePage> {
   List? _myActivities;
   late String _myActivitiesResult;
   final formKey = new GlobalKey<FormState>();
+  @override
+  void initState() {
+    super.initState();
+    _myActivities = [];
+    _myActivitiesResult = '';
+  }
+  _saveForm() {
+    var form = formKey.currentState!;
+    if (form.validate()) {
+      form.save();
+      setState(() {
+        _myActivitiesResult = _myActivities.toString();
+      });
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,11 +48,11 @@ class ProfileState extends State<Profile> {
                 padding: EdgeInsets.all(16),
                 child: MultiSelectFormField(
                   autovalidate: AutovalidateMode.disabled,
-                  chipBackGroundColor: const Color(0xff6200ee),
+                  chipBackGroundColor: Colors.blue,
                   chipLabelStyle: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.white),
                   dialogTextStyle: TextStyle(fontWeight: FontWeight.bold),
-                  checkBoxActiveColor: const Color(0xff6200ee),
+                  checkBoxActiveColor: Colors.blue,
                   checkBoxCheckColor: Colors.white,
                   dialogShapeBorder: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(12.0))),
